@@ -1,0 +1,6 @@
+{
+  "name": "Super Agente — Código Europa",
+  "description": "Página de captura e vendas do Super Agente — Código Europa com recursos interativos gratuitos e metodologia completa de imigração para a Espanha.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
