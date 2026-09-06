@@ -4,10 +4,108 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Super Agente — Código Europa</title>
-  <meta name="description" content="Página de captura e vendas do Super Agente — Código Europa. Rota, ordem e especialistas em IA para morar na Espanha.">
+  <meta name="description" content="Rota, ordem e cinco especialistas em IA para você sair do Brasil e morar legalmente na Espanha. Sem 34 abas abertas.">
+  <meta name="theme-color" content="#0D1830">
+  <link rel="canonical" href="https://vitordiorranes-cloud.github.io/Vitor-Diorranes/">
+
+  <!-- Cartão de compartilhamento (Instagram DM, WhatsApp, Telegram) -->
   <meta property="og:title" content="Super Agente — Código Europa">
-  <meta property="og:description" content="Página de captura e vendas do Super Agente — Código Europa. Rota, ordem e especialistas em IA para morar na Espanha.">
+  <meta property="og:description" content="Rota, ordem e cinco especialistas em IA para você sair do Brasil e morar legalmente na Espanha.">
   <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:url" content="https://vitordiorranes-cloud.github.io/Vitor-Diorranes/">
+  <meta property="og:image" content="https://vitordiorranes-cloud.github.io/Vitor-Diorranes/assets/og-super-agente.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Super Agente — Código Europa">
+  <meta name="twitter:description" content="Rota, ordem e cinco especialistas em IA para você sair do Brasil e morar legalmente na Espanha.">
+  <meta name="twitter:image" content="https://vitordiorranes-cloud.github.io/Vitor-Diorranes/assets/og-super-agente.png">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230D1830'/%3E%3Crect x='10' y='14' width='3' height='36' fill='%23A31E22'/%3E%3Ctext x='20' y='43' font-family='Georgia,serif' font-size='30' font-weight='700' fill='%23F7F3EC'%3ECE%3C/text%3E%3C/svg%3E">
+
+  <!-- ==========================================================================
+       ⚙️  PAINEL DE CONTROLE — ÚNICO LUGAR QUE VOCÊ PRECISA EDITAR
+       ==========================================================================
+       Vitor: tudo que a página precisa saber está nas 8 linhas abaixo.
+       Preencha entre as aspas. Não mexa em mais nada do arquivo.
+       ========================================================================== -->
+  <script>
+    window.CE_CONFIG = {
+
+      // 1) LINK DO CHECKOUT — cole aqui o link de pagamento da Hotmart.
+      //    Formato: "https://pay.hotmart.com/XXXXXXXXX"
+      //    Enquanto estiver vazio, a página exibe um aviso vermelho no topo.
+      CHECKOUT_URL: "",
+
+      // 2) VÍDEO DE VENDAS — cole SÓ O ID do vídeo, não a URL inteira.
+      //    YouTube: https://youtu.be/AbCdEf12345  ->  o ID é  AbCdEf12345
+      //    Vimeo:   https://vimeo.com/987654321   ->  o ID é  987654321
+      VIDEO_ID: "",
+      VIDEO_PLATFORM: "youtube",           // "youtube" ou "vimeo"
+
+      // 3) SEGUNDOS ATÉ O BOTÃO DE COMPRA APARECER embaixo do vídeo.
+      //    300 = 5 minutos. Coloque 0 para o botão aparecer de imediato.
+      CTA_DELAY_SECONDS: 300,
+
+      // 4) PREÇO exibido nos botões. Trocou o preço? Troque só aqui.
+      PRICE_LABEL: "R$297",
+
+      // 5) RASTREAMENTO — cole os IDs quando tiver. Vazio = não carrega nada.
+      GA4_ID: "",                          // ex.: "G-XXXXXXXXXX"
+      META_PIXEL_ID: "",                   // ex.: "1234567890123456"
+
+      // 6) CAPTURA DE E-MAIL — endpoint do formulário (Formspree, Getform...).
+      //    ex.: "https://formspree.io/f/xxxxxxx"
+      EMAIL_ENDPOINT: ""
+    };
+  </script>
+
+  <!-- Carregadores de rastreamento (só disparam se os IDs acima existirem) -->
+  <script>
+    (function () {
+      var C = window.CE_CONFIG || {};
+
+      /* Google Analytics 4 */
+      if (C.GA4_ID) {
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=' + C.GA4_ID;
+        document.head.appendChild(s);
+        window.dataLayer = window.dataLayer || [];
+        window.gtag = function () { window.dataLayer.push(arguments); };
+        window.gtag('js', new Date());
+        window.gtag('config', C.GA4_ID);
+      }
+
+      /* Meta Pixel */
+      if (C.META_PIXEL_ID) {
+        !function (f, b, e, v, n, t, s) {
+          if (f.fbq) return; n = f.fbq = function () {
+            n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+          };
+          if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0'; n.queue = [];
+          t = b.createElement(e); t.async = !0; t.src = v;
+          s = b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s);
+        }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+        window.fbq('init', C.META_PIXEL_ID);
+        window.fbq('track', 'PageView');
+      }
+
+      /* Atalho único de evento — funciona com GA4, Pixel ou nenhum dos dois */
+      window.ceTrack = function (nome, params) {
+        params = params || {};
+        try { if (window.gtag) window.gtag('event', nome, params); } catch (e) {}
+        try {
+          if (window.fbq) {
+            var padrao = ['ViewContent', 'InitiateCheckout', 'Lead', 'Purchase', 'AddToCart'];
+            if (padrao.indexOf(nome) > -1) window.fbq('track', nome, params);
+            else window.fbq('trackCustom', nome, params);
+          }
+        } catch (e) {}
+      };
+    })();
+  </script>
 
   <!-- Google Fonts: Playfair Display, Libre Baskerville, Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -314,15 +412,14 @@
        SEÇÃO 1 — HERO (COM VÍDEO AMBIENTE DE BARCELONA / ESPANHA)
        ========================================================================== */
     #hero {
-      min-height: 94vh;
       background-color: var(--navy-deep);
       color: var(--creme);
       display: flex;
       flex-direction: column;
       justify-content: center;
       position: relative;
-      padding-top: clamp(90px, 9vw, 130px);
-      padding-bottom: clamp(80px, 8vw, 120px);
+      padding-top: clamp(52px, 6vw, 88px);
+      padding-bottom: clamp(56px, 6vw, 96px);
       overflow: hidden;
     }
 
@@ -1117,7 +1214,7 @@
        SEÇÃO 5 — A VSL
        ========================================================================== */
     #vsl {
-      background-color: var(--navy-deep);
+      background-color: transparent;
       color: var(--creme);
       position: relative;
     }
@@ -1825,9 +1922,209 @@
         width: 100%;
       }
     }
+
+    /* ==========================================================================
+       BLOCO NOVO — VSL NO TOPO, AVISO DE CONFIGURAÇÃO E PLAYER REAL
+       ========================================================================== */
+
+    /* --- Aviso vermelho: só aparece se o CHECKOUT_URL estiver vazio --- */
+    .ce-warning {
+      display: none;
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 9999;
+      background-color: var(--vermelho);
+      color: var(--creme);
+      font-family: var(--font-sans);
+      font-size: 0.8125rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      text-align: center;
+      padding: 0.625rem 1rem;
+      line-height: 1.4;
+    }
+    .ce-warning.on { display: block; }
+    body.has-warning #hero { padding-top: clamp(88px, 8vw, 120px); }
+
+    /* --- Coluna central do topo: headline + vídeo ficam alinhados --- */
+    .hero-top-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0;
+    }
+
+    .hero-copy-block { max-width: 780px; }
+
+    /* No topo o H1 encolhe: a estrela agora é o vídeo, não a tipografia */
+    #hero .hero-h1 { font-size: clamp(1.75rem, 3.9vw, 2.9rem); }
+    #hero .hero-headline-wrap { margin-bottom: 1.25rem; }
+    #hero .hero-subhead { margin-bottom: 1.5rem; font-size: clamp(1rem, 1.5vw, 1.125rem); }
+    #hero .hero-live-badge { margin-bottom: 1rem; }
+
+    /* --- Caixa do vídeo no topo --- */
+    .hero-vsl-wrap {
+      margin-top: 0.5rem;
+      max-width: 860px;
+      width: 100%;
+    }
+
+    .vsl-eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-family: var(--font-sans);
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(247, 243, 236, 0.7);
+      margin-bottom: 0.85rem;
+    }
+    .vsl-eyebrow .pulse-dot { background-color: var(--vermelho); }
+
+    /* Sobrescreve o espaçamento antigo quando o player está no topo */
+    .hero-vsl-wrap .vsl-container {
+      margin-bottom: 1.5rem;
+      cursor: pointer;
+      box-shadow: 0 28px 60px rgba(0, 0, 0, 0.55);
+      border-color: rgba(247, 243, 236, 0.28);
+    }
+
+    /* O iframe real entra aqui quando o VIDEO_ID estiver preenchido */
+    .vsl-container iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+      z-index: 4;
+    }
+
+    .vsl-container.is-playing .play-btn-css,
+    .vsl-container.is-playing .vsl-placeholder-text,
+    .vsl-container.is-playing .vsl-video-backdrop,
+    .vsl-container.is-playing .vsl-facade-title,
+    .vsl-container.is-playing .vsl-facade-dur { display: none; }
+
+    .vsl-facade-title {
+      position: relative;
+      z-index: 3;
+      font-family: var(--font-serif);
+      font-size: clamp(1.05rem, 2.4vw, 1.6rem);
+      line-height: 1.3;
+      color: var(--creme);
+      text-align: center;
+      max-width: 80%;
+      margin-bottom: 1.25rem;
+      text-shadow: 0 2px 12px rgba(13, 24, 48, 0.8);
+    }
+
+    .vsl-facade-dur {
+      position: relative;
+      z-index: 3;
+      font-family: var(--font-sans);
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(247, 243, 236, 0.6);
+      margin-top: 0.85rem;
+    }
+
+    /* --- Bloco de CTA embaixo do vídeo (alinhado à esquerda no topo) --- */
+    .hero-vsl-wrap .vsl-delayed-cta {
+      align-items: flex-start;
+      gap: 0.65rem;
+    }
+    .hero-vsl-wrap .vsl-waiting-text {
+      text-align: left;
+      margin-top: 0;
+    }
+
+    .hero-alt-cta {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.9rem 1.5rem;
+      margin-top: 1.25rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid rgba(247, 243, 236, 0.14);
+    }
+
+    .hero-alt-link {
+      font-family: var(--font-sans);
+      font-size: 0.9375rem;
+      font-weight: 600;
+      color: var(--creme);
+      text-decoration: none;
+      border-bottom: 1px solid var(--vermelho);
+      padding-bottom: 2px;
+      transition: color 0.25s ease, border-color 0.25s ease;
+    }
+    .hero-alt-link:hover { color: var(--vermelho); border-color: var(--creme); }
+
+    .hero-alt-note {
+      font-family: var(--font-sans);
+      font-size: 0.8125rem;
+      color: rgba(247, 243, 236, 0.55);
+    }
+
+    #hero .hero-proof {
+      margin-top: 1.5rem;
+      margin-bottom: 0;
+    }
+
+    /* --- Selos de confiança embaixo do topo --- */
+    .trust-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 0.75rem;
+      margin-top: 1.25rem;
+    }
+    .trust-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-family: var(--font-sans);
+      font-size: 0.6875rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: rgba(247, 243, 236, 0.72);
+      background-color: rgba(247, 243, 236, 0.07);
+      border: 1px solid rgba(247, 243, 236, 0.16);
+      border-radius: 9999px;
+      padding: 0.375rem 0.8rem;
+    }
+
+    /* --- Âncora de retorno ao vídeo, usada na seção "A virada" --- */
+    .virada-video-link {
+      color: var(--vermelho);
+      font-weight: 700;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(163, 30, 34, 0.4);
+    }
+    .virada-video-link:hover { border-bottom-color: var(--vermelho); }
+
+    @media (max-width: 768px) {
+      #hero { padding-top: clamp(40px, 12vw, 64px); }
+      .hero-vsl-wrap { margin-top: 0.25rem; }
+      .hero-vsl-wrap .vsl-container { margin-bottom: 1.25rem; }
+      .hero-vsl-wrap .vsl-delayed-cta,
+      .hero-cta-wrap { align-items: stretch; }
+      .hero-vsl-wrap .vsl-delayed-cta .btn-pill,
+      .hero-cta-wrap .btn-pill { width: 100%; text-align: center; }
+      .play-btn-css { width: 62px; height: 62px; }
+      .vsl-facade-title { font-size: 1rem; max-width: 90%; margin-bottom: 0.9rem; }
+      .hero-alt-cta { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
+    }
   </style>
 </head>
 <body>
+
+  <!-- Aviso interno: só aparece enquanto o CHECKOUT_URL estiver vazio -->
+  <div class="ce-warning" id="ce-warning" role="status">
+    ⚠️ CHECKOUT NÃO CONFIGURADO — abra o index.html, ache <strong>CHECKOUT_URL</strong> no painel de controle e cole o link da Hotmart.
+  </div>
 
   <!-- HUD DE PROGRESSO (Aparece somente na Seção 3) -->
   <aside id="hud-portas" aria-label="Progresso das Portas">
@@ -1875,13 +2172,48 @@
           Não é falta de vontade. Você já salvou os vídeos, já entrou nos grupos, já pesquisou visto num domingo à noite. O que falta não é informação. É <span class="ordem-word">ordem</span>.
         </p>
         
+        <!-- ====================================================================
+             VSL — AGORA NO TOPO. É A PRIMEIRA COISA QUE A PESSOA VÊ.
+             O id="vsl" foi mantido aqui de propósito: o JS procura por ele.
+             ==================================================================== -->
+        <div class="hero-vsl-wrap" id="vsl">
+          <div class="vsl-eyebrow">
+            <span class="pulse-dot"></span>
+            <span>Assista antes de decidir</span>
+          </div>
+
+          <div class="vsl-container reveal-item revealed" id="vsl-slot" role="button" tabindex="0" aria-label="Assistir a apresentação do Super Agente">
+            <img src="https://images.unsplash.com/photo-1583422409516-2895a77efded?q=80&w=1200&auto=format&fit=crop" alt="Barcelona" class="vsl-video-backdrop">
+            <p class="vsl-facade-title">Como sair do Brasil com uma rota escrita — e não com trinta e quatro abas abertas.</p>
+            <div class="play-btn-css" title="Assistir apresentação">
+              <div class="play-triangle"></div>
+            </div>
+            <div class="vsl-facade-dur">12 min · assista com fone</div>
+            <div class="vsl-placeholder-text" id="vsl-placeholder-text" hidden>SLOT DO VÍDEO — preencha VIDEO_ID no painel de controle</div>
+          </div>
+
+          <!-- Botão de compra: revelado depois de CTA_DELAY_SECONDS -->
+          <div class="vsl-delayed-cta" id="vsl-cta-block">
+            <a href="#" class="btn-pill btn-creme js-checkout" id="vsl-cta-btn" data-cta="topo-vsl">QUERO O SUPER AGENTE — R$297</a>
+            <span class="hero-subcta">acesso imediato · 7 dias de garantia · cancela em um clique</span>
+          </div>
+          <div class="vsl-waiting-text" id="vsl-waiting">o acesso libera durante o vídeo — fica com ele</div>
+
+          <div class="hero-alt-cta">
+            <a href="#portas" class="hero-alt-link" id="hero-cta-btn">Prefere testar antes? Abra a primeira porta — grátis ↓</a>
+            <span class="hero-alt-note">sem cadastro · dá pra fazer ainda hoje, do Brasil</span>
+          </div>
+        </div>
+
         <p class="hero-proof">
           Vitor Diorranes · 33 países · Barcelona · ex-Cruzeiro EC, Seleção Brasileira de Futsal
         </p>
-        
-        <div class="hero-cta-wrap">
-          <a href="#portas" class="btn-pill btn-creme" id="hero-cta-btn">ABRIR A PRIMEIRA PORTA — GRÁTIS</a>
-          <span class="hero-subcta">↓ as 3 portas estão logo abaixo. sem cadastro.</span>
+
+        <div class="trust-row">
+          <span class="trust-chip">Pagamento via Hotmart</span>
+          <span class="trust-chip">Garantia de 7 dias</span>
+          <span class="trust-chip">Acesso vitalício</span>
+          <span class="trust-chip">Feito de Barcelona</span>
         </div>
       </div>
     </section>
@@ -2160,34 +2492,15 @@
           O gargalo não é a lista. O gargalo é o que você faz na terça-feira às 21h, depois do trabalho, cansado, com uma hora livre e trinta e quatro abas abertas.
         </p>
         <p class="reveal-item">
-          É disso que trata o vídeo abaixo.
+          É exatamente disso que trata o vídeo lá no topo desta página. Se você desceu direto e pulou ele, <a href="#hero" class="virada-video-link">volta e assiste</a> — são doze minutos e é onde tudo faz sentido.
         </p>
         <div class="virada-note reveal-item">
           12 minutos. Sem enrolação. Assiste com fone.
         </div>
-      </div>
-    </section>
 
-    <!-- ==========================================================================
-         SEÇÃO 5 — A VSL
-         ========================================================================== -->
-    <section id="vsl" class="section-pad">
-      <div class="container-medium">
-        <!-- SUBSTITUIR: colar aqui o iframe do YouTube/Vimeo/Panda -->
-        <div class="vsl-container reveal-item" id="vsl-slot">
-          <img src="https://images.unsplash.com/photo-1583422409516-2895a77efded?q=80&w=1200&auto=format&fit=crop" alt="Barcelona VSL" class="vsl-video-backdrop" loading="lazy">
-          <div class="play-btn-css" title="Assistir apresentação">
-            <div class="play-triangle"></div>
-          </div>
-          <div class="vsl-placeholder-text">SLOT DO VÍDEO DE VENDAS — substituir pelo embed</div>
+        <div class="price-cta-wrap reveal-item" style="margin-top:2.5rem;">
+          <a href="#" class="btn-pill btn-navy js-checkout" data-cta="pos-portas">QUERO O SUPER AGENTE — R$297</a>
         </div>
-
-        <!-- MECÂNICA DO CTA ATRASADO -->
-        <div class="vsl-delayed-cta" id="vsl-cta-block">
-          <!-- SUBSTITUIR: URL do checkout -->
-          <a href="#checkout" class="btn-pill btn-creme" id="vsl-cta-btn">QUERO O SUPER AGENTE — R$297</a>
-        </div>
-        <div class="vsl-waiting-text">as respostas mais comuns estão logo abaixo</div>
       </div>
     </section>
 
@@ -2362,7 +2675,7 @@
         <!-- CTA -->
         <div class="price-cta-wrap reveal-item">
           <!-- SUBSTITUIR: URL do checkout -->
-          <a href="#checkout" class="btn-pill btn-navy" id="preco-cta-btn">QUERO O SUPER AGENTE — R$297</a>
+          <a href="#" class="btn-pill btn-navy js-checkout" id="preco-cta-btn" data-cta="tabela-preco">QUERO O SUPER AGENTE — R$297</a>
           <span class="micro-note">acesso imediato · pagamento seguro</span>
         </div>
       </div>
@@ -2513,7 +2826,7 @@
 
         <div class="fechamento-cta-wrap reveal-item">
           <!-- SUBSTITUIR: URL do checkout -->
-          <a href="#checkout" class="btn-pill btn-creme" id="fechamento-cta-btn">QUERO O SUPER AGENTE — R$297</a>
+          <a href="#" class="btn-pill btn-creme js-checkout" id="fechamento-cta-btn" data-cta="fechamento">QUERO O SUPER AGENTE — R$297</a>
         </div>
 
         <div class="signature-wrap reveal-item">
@@ -2544,7 +2857,7 @@
       <div class="sticky-bar-inner">
         <div class="sticky-bar-text">Super Agente — Código Europa · R$297 ou 12x R$29,70</div>
         <!-- SUBSTITUIR: URL do checkout -->
-        <a href="#checkout" class="btn-pill btn-creme" id="sticky-cta-btn">QUERO O SUPER AGENTE — R$297</a>
+        <a href="#" class="btn-pill btn-creme js-checkout" id="sticky-cta-btn" data-cta="barra-fixa">QUERO O SUPER AGENTE — R$297</a>
       </div>
     </div>
   </aside>
@@ -2553,10 +2866,104 @@
        JAVASCRIPT AUTOCONTIDO (SEM DEPENDÊNCIAS, SEM STORAGE)
        ========================================================================== */ -->
   <script>
-    /* Configurações ajustáveis */
-    const VSL_CTA_DELAY = 480; // segundos para revelação do CTA da VSL
+    /* Tudo abaixo lê do PAINEL DE CONTROLE lá no topo do arquivo (window.CE_CONFIG).
+       Você não precisa editar nada aqui embaixo. */
+    const CFG = Object.assign({
+      CHECKOUT_URL: "", VIDEO_ID: "", VIDEO_PLATFORM: "youtube",
+      CTA_DELAY_SECONDS: 300, PRICE_LABEL: "R$297",
+      GA4_ID: "", META_PIXEL_ID: "", EMAIL_ENDPOINT: ""
+    }, window.CE_CONFIG || {});
+
+    const VSL_CTA_DELAY = Number(CFG.CTA_DELAY_SECONDS) || 0;
+    const track = window.ceTrack || function () {};
 
     document.addEventListener("DOMContentLoaded", () => {
+
+      /* ------------------------------------------------------------------------
+         0-A. CHECKOUT — liga os 5 botões de compra ao link da Hotmart
+         ------------------------------------------------------------------------ */
+      const checkoutUrl = (CFG.CHECKOUT_URL || "").trim();
+      const botoesCompra = document.querySelectorAll(".js-checkout");
+      const avisoEl = document.getElementById("ce-warning");
+
+      if (checkoutUrl) {
+        botoesCompra.forEach(btn => {
+          btn.setAttribute("href", checkoutUrl);
+          btn.setAttribute("target", "_blank");
+          btn.setAttribute("rel", "noopener");
+          btn.addEventListener("click", () => {
+            track("InitiateCheckout", {
+              content_name: "Super Agente — Código Europa",
+              origem: btn.getAttribute("data-cta") || "desconhecida",
+              value: 297, currency: "BRL"
+            });
+          });
+        });
+      } else {
+        /* Sem link configurado: mostra o aviso e impede clique em botão morto */
+        if (avisoEl) avisoEl.classList.add("on");
+        document.body.classList.add("has-warning");
+        console.warn("[Código Europa] CHECKOUT_URL vazio — botões de compra desativados.");
+        botoesCompra.forEach(btn => {
+          btn.addEventListener("click", e => {
+            e.preventDefault();
+            alert("O checkout ainda não foi configurado nesta página.");
+          });
+        });
+      }
+
+      /* Preço dinâmico: trocou PRICE_LABEL, troca em todos os botões */
+      if (CFG.PRICE_LABEL && CFG.PRICE_LABEL !== "R$297") {
+        botoesCompra.forEach(btn => {
+          btn.textContent = btn.textContent.replace(/R\$\s?297/g, CFG.PRICE_LABEL);
+        });
+      }
+
+      /* ------------------------------------------------------------------------
+         0-B. PLAYER DA VSL — miniatura vira vídeo de verdade no primeiro clique
+         (carrega o iframe só quando a pessoa dá play: página abre rápido)
+         ------------------------------------------------------------------------ */
+      const slot = document.getElementById("vsl-slot");
+      const videoId = (CFG.VIDEO_ID || "").trim();
+      let videoIniciado = false;
+
+      if (slot && !videoId) {
+        const ph = document.getElementById("vsl-placeholder-text");
+        if (ph) ph.hidden = false;
+        console.warn("[Código Europa] VIDEO_ID vazio — o player está em modo miniatura.");
+      }
+
+      function tocarVideo() {
+        if (!slot || !videoId || videoIniciado) return;
+        videoIniciado = true;
+
+        const iframe = document.createElement("iframe");
+        iframe.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen");
+        iframe.setAttribute("allowfullscreen", "");
+        iframe.setAttribute("title", "Super Agente — apresentação");
+
+        if ((CFG.VIDEO_PLATFORM || "youtube").toLowerCase() === "vimeo") {
+          iframe.src = "https://player.vimeo.com/video/" + encodeURIComponent(videoId) + "?autoplay=1&title=0&byline=0&portrait=0";
+        } else {
+          iframe.src = "https://www.youtube-nocookie.com/embed/" + encodeURIComponent(videoId) +
+                       "?autoplay=1&rel=0&modestbranding=1&playsinline=1";
+        }
+
+        slot.appendChild(iframe);
+        slot.classList.add("is-playing");
+        track("VideoPlay", { content_name: "VSL Super Agente" });
+        iniciarContagemCta();
+      }
+
+      if (slot) {
+        slot.addEventListener("click", tocarVideo);
+        slot.addEventListener("keydown", e => {
+          if (e.key === "Enter" || e.key === " ") { e.preventDefault(); tocarVideo(); }
+        });
+      }
+
+      /* Sinaliza que a pessoa chegou na página de vendas */
+      track("ViewContent", { content_name: "LP Super Agente", value: 297, currency: "BRL" });
 
       /* ------------------------------------------------------------------------
          1. LIVE CLOCK (HORÁRIO DE BARCELONA / ESPANHA EM TEMPO REAL)
@@ -2797,40 +3204,83 @@
       if (emailForm && emailConfirm) {
         emailForm.addEventListener("submit", (e) => {
           e.preventDefault();
-          emailForm.style.display = "none";
-          emailConfirm.style.display = "block";
+          const campo = document.getElementById("email-capture-input");
+          const email = campo ? campo.value.trim() : "";
+          const destino = (CFG.EMAIL_ENDPOINT || "").trim();
+
+          function confirmar() {
+            emailForm.style.display = "none";
+            emailConfirm.style.display = "block";
+            track("Lead", { content_name: "Dossiê 34 Portais", origem: "portas-lp" });
+          }
+
+          if (destino && email) {
+            /* Envia de verdade para o serviço configurado (Formspree, Getform...) */
+            fetch(destino, {
+              method: "POST",
+              headers: { "Accept": "application/json", "Content-Type": "application/json" },
+              body: JSON.stringify({
+                email: email,
+                origem: "LP Super Agente — 3 Portas",
+                data: new Date().toISOString()
+              })
+            }).catch(err => console.warn("[Código Europa] Falha ao enviar e-mail:", err));
+          } else if (!destino) {
+            console.warn("[Código Europa] EMAIL_ENDPOINT vazio — o e-mail digitado NÃO foi salvo em lugar nenhum:", email);
+          }
+
+          confirmar();
         });
       }
 
       /* ------------------------------------------------------------------------
-         9. VSL — TIMER PARA REVELAÇÃO DO CTA ATRASADO (VSL_CTA_DELAY)
+         9. VSL — LIBERAÇÃO DO BOTÃO DE COMPRA DEPOIS DE CTA_DELAY_SECONDS
+         O relógio começa quando a pessoa dá play. Se ela nunca der play,
+         começa mesmo assim ao passar da metade da página — ninguém fica
+         preso sem ter onde comprar.
          ------------------------------------------------------------------------ */
-      const sectionVsl = document.getElementById("vsl");
       const vslCtaBlock = document.getElementById("vsl-cta-block");
-      let vslTimerStarted = false;
+      const vslWaiting = document.getElementById("vsl-waiting");
+      let ctaLiberado = false;
+      let contagemIniciada = false;
 
-      function startVslTimer() {
-        if (vslTimerStarted) return;
-        vslTimerStarted = true;
+      function liberarCta() {
+        if (ctaLiberado) return;
+        ctaLiberado = true;
+        if (vslCtaBlock) vslCtaBlock.classList.add("revealed");
+        if (vslWaiting) vslWaiting.style.display = "none";
+        track("CtaLiberado", { after_seconds: VSL_CTA_DELAY });
+      }
 
-        setTimeout(() => {
-          if (vslCtaBlock) {
-            vslCtaBlock.classList.add("revealed");
+      function iniciarContagemCta() {
+        if (contagemIniciada) return;
+        contagemIniciada = true;
+        if (VSL_CTA_DELAY <= 0) { liberarCta(); return; }
+        setTimeout(liberarCta, VSL_CTA_DELAY * 1000);
+      }
+
+      /* Sem vídeo configurado o botão não fica refém de um play que não existe */
+      if (!videoId) iniciarContagemCta();
+
+      /* Rede de segurança: passou da metade da página, libera o botão */
+      window.addEventListener("scroll", function () {
+        const rolagem = window.scrollY + window.innerHeight;
+        if (rolagem > document.body.scrollHeight * 0.45) liberarCta();
+      }, { passive: true });
+
+      /* Profundidade de rolagem — mostra onde as pessoas desistem */
+      const marcosRolagem = { 25: false, 50: false, 75: false, 90: false };
+      window.addEventListener("scroll", function () {
+        const alcance = document.body.scrollHeight - window.innerHeight;
+        if (alcance <= 0) return;
+        const pct = (window.scrollY / alcance) * 100;
+        Object.keys(marcosRolagem).forEach(function (m) {
+          if (!marcosRolagem[m] && pct >= Number(m)) {
+            marcosRolagem[m] = true;
+            track("Rolagem" + m, { percent: Number(m) });
           }
-        }, VSL_CTA_DELAY * 1000);
-      }
-
-      if (sectionVsl && "IntersectionObserver" in window) {
-        const vslObserver = new IntersectionObserver((entries, observer) => {
-          entries.forEach(entry => {
-            if (entry.isIntersecting) {
-              startVslTimer();
-              observer.unobserve(entry.target);
-            }
-          });
-        }, { threshold: 0.1 });
-        vslObserver.observe(sectionVsl);
-      }
+        });
+      }, { passive: true });
 
       /* ------------------------------------------------------------------------
          10. FAQ ACORDEÃO (Um aberto por vez, max-height animado, rotação do +)
@@ -2875,17 +3325,21 @@
          ------------------------------------------------------------------------ */
       const stickyBar = document.getElementById("sticky-bar");
       const sectionFechamento = document.getElementById("fechamento");
+      const secaoPortas = document.getElementById("portas");
 
       function handleStickyBar() {
-        if (!stickyBar || !sectionVsl || !sectionFechamento) return;
+        if (!stickyBar || !sectionFechamento) return;
 
-        const vslRect = sectionVsl.getBoundingClientRect();
-        const fechamentoRect = sectionFechamento.getBoundingClientRect();
+        /* A barra só aparece depois que o botão principal foi liberado —
+           senão ela furaria a mecânica de assistir o vídeo antes de comprar. */
+        if (!ctaLiberado) { stickyBar.classList.remove("visible"); return; }
 
-        const passedVsl = vslRect.bottom < window.innerHeight * 0.5;
-        const reachedFechamento = fechamentoRect.top <= window.innerHeight * 0.85;
+        const gatilho = secaoPortas
+          ? secaoPortas.getBoundingClientRect().top < window.innerHeight * 0.5
+          : window.scrollY > window.innerHeight;
+        const chegouFechamento = sectionFechamento.getBoundingClientRect().top <= window.innerHeight * 0.85;
 
-        if (passedVsl && !reachedFechamento) {
+        if (gatilho && !chegouFechamento) {
           stickyBar.classList.add("visible");
         } else {
           stickyBar.classList.remove("visible");
